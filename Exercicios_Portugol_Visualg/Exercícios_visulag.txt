@@ -1,0 +1,883 @@
+Algoritmo "aprovado_reprovado"
+Var
+nt1, nt2, media :Real;
+Inicio
+      Escreva("Informe a primeira nota: ");
+      Leia(nt1);
+       Escreva("Informe a segunda nota: ");
+      Leia(nt2);    
+      media <- (nt1 + nt2)/2;
+      se (media >= 6) Então
+      Escreva("Aluno Aprovado");      
+      Senão 
+      Escreva("Aluno Reprovado");
+      Fimse;
+Fimalgoritmo
+============================================================
+Algoritmo "Calculo_de_maioridade"
+Var
+// Seção de Declarações das variáveis 
+   ano_nasc, ano_atual, idade: Inteiro;
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o ano de nascimento: ");
+   leia(ano_nasc);
+   Escreva("informe ano atual: ");
+   Leia(ano_atual);
+   idade <- ano_atual - ano_nasc;
+   se (idade>=18) então
+      Escreva("Você é maior de idade,tem", idade, " anos!");
+   senão se (idade <18)
+      Escreva("Você é menor de idade, tem", idade, " anos!") ;
+      FIMSE;
+Fimalgoritmo
+============================================================
+Algoritmo "Calculo_Delta"
+var
+   a, b, c, delta : real
+inicio
+   escreva("a = ")
+   leia(a)
+   escreva("b = ")
+   leia(b)
+   escreva("c = ")
+   leia(c)
+   delta <- b^2 - 4 * a * c
+   Escreva("O valor de Delta é", delta)
+Fimalgoritmo
+============================================================
+Algoritmo "Conversaodolar"
+
+Var
+// Seção de Declarações das variáveis 
+   reais, dolares: Real;
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    Escreva("Digite quantos Reais você tem: R$");
+    Leia(reais);
+    dolares <- reais/5.41;
+    Escreva("Você tem US$" , dolares:4:2, " dolares.");
+
+Fimalgoritmo
+============================================================
+
+
+
+
+
+Algoritmo "Conversor de Dolares para Real"
+Var:
+    dolar, reais, cotacao: Real;
+Inicio
+      Escreva("Valor em Dólares: US$ ");
+      leia(dolar);
+      cotacao <- 5.48;
+      reais <- dolar*cotacao;
+      Escreva ("Valor em Reais: R$ ", reais:4:2);
+Fimalgoritmo
+============================================================
+Algoritmo "Conversor de temperatura c° para F°"
+Var:
+    c, f : Real;
+Inicio
+      Escreva("Informe a temperatura em Celsius: C° ");
+      leia(c);
+      f <- (9*c+160)/5;
+      Escreva ("A temperatura local é de:",F, "F° (Fahrenheit)");
+Fimalgoritmo
+============================================================
+Algoritmo "dataNasc"
+Var
+// Seção de Declarações das variáveis
+   ano_atual,dtnasc, idade: inteiro;
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o ano de nascimento: ");
+   Leia(dtnasc);
+   Escreva("Informe o ano atual: ");
+   Leia(ano_atual);
+   idade <- (ano_atual-dtnasc);
+   Escreva("você tem" ,idade, " anos");
+Fimalgoritmo
+============================================================
+Algoritmo "Gastos_dentro_ou_fora_orcamento"
+Var
+// Seção de Declarações das variáveis 
+   gastos, vsalario: Real;
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o valor da compra: R$ ");
+   leia(gastos);
+   Escreva("informe seu salário: R$ ");
+   Leia(vsalario);   
+   se(gastos > vsalario) então
+   Escreva("Gastos dentro do orçamento!";)
+   senão
+   Escreva("Orçamento estourado!");
+   fimse;
+Fimalgoritmo
+============================================================
+Algoritmo "Numero_maior_ou_menor"
+Var
+// Seção de Declarações das variáveis 
+   n1, n2: Inteiro;
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o primeiro número: ");
+   leia(n1);
+   Escreva("informe o segundo número: ");
+   Leia(n2);   
+   se(n1 > n2) então
+   Escreva("O maior número informado foi o n°", n1);
+   senão
+   Escreva("O maior número informado foi o n°", n2);
+   fimse;
+Fimalgoritmo
+============================================================
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+Algoritmo "Numeros_iguais_ou_diferente"
+Var
+// Seção de Declarações das variáveis 
+   n1, n2: Inteiro;
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o primeiro número: ");
+   leia(n1);
+   Escreva("informe o segundo número: ");
+   Leia(n2);   
+   se(n1 == n2) então
+   Escreva("Números iguais!");
+   senão
+   Escreva("Números diferentes!");   
+   fimse;
+Fimalgoritmo
+============================================================
+Algoritmo "Placar"
+Var
+// Seção de Declarações das variáveis
+   timeA, timeB: Inteiro;
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+Escreva("Infrome a quantidade de gols do time A: ");
+Leia(timeA);
+Escreva("Informe a quantidade de gols do time B: ");
+Leia(timeB);
+se (timeA == timeB) ENTAO
+   Escreva("Jogo empatado");
+ senão se (timeA > timeB)
+       ENTAO
+   Escreva("Time A foi campeão com", timeA, "gols");
+senão
+     Escreva("Time B foi campeão com" , timeB, "gols");     
+fimse;
+Fimalgoritmo
+============================================================
+Algoritmo "positivo_negativo"
+Var
+n1:inteiro;
+Inicio
+      Escreva("Informe o primeiro número: ");
+      Leia(n1);
+      se (n1 >= 0) Então
+      Escreva("Número", n1, " é positivo");      
+      senão
+      Escreva("O número", n1, " é negativo");
+      Fimse;
+Fimalgoritmo
+============================================================
+
+Algoritmo "reajuste salarial"
+
+Var
+   salario, taxa, reajuste, nsalario: Real;
+
+Inicio
+
+   Escreva("Informe o salário atual: R$ ");
+   Leia(salario);
+   Escreva("Informe o reajuste: %" );
+   Leia(taxa);
+   reajuste <- (salario*taxa)/100;
+   nsalario <- (salario + reajuste);
+   Escreva("Com um reajuste de" , taxa,"% O novo salario passa a ser de R$" , nsalario,".");
+
+Fimalgoritmo
+============================================================
+
+
+
+
+
+
+Algoritmo "Taxa de Juros"
+var
+   emprestimo, tjuros, parcelas, vparcelas, juros, montante, prestacao : Real;
+inicio
+// Seção de Comandos
+   Escreva("Informe o valor do empréstimo: R$ ");
+   leia(emprestimo);
+   Escreva("Informe o valor da taxa: % ");
+   leia(tjuros);
+   Escreva("Informe a quantidade de parcelas: ");
+   leia(parcelas);
+   vparcelas <- (emprestimo / parcelas);
+   juros<- (emprestimo*tjuros)/100;
+   montante <-(emprestimo + juros);
+   prestacao <- (vparcelas+(juros/parcelas));
+   Escreval("Com juros de ", tjuros,"% Você irá pagar um montante de ", montante:5:2, " em ",parcelas," parcelas, Sendo cada parcela no valor de R$", prestacao:5:2);   
+Fimalgoritmo
+============================================================
+Algoritmo "valor_da_compra"
+Var
+// Seção de Declarações das variáveis 
+   valor, saldoemconta: Real;
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o valor da compra: R$ ");
+   leia(valor);
+   Escreva("informe seu saldo: R$ ");
+   Leia(saldoemconta);   
+   se(valor > saldoemconta) então
+   Escreva("Você não tem saldo sufuciente para efetuar a compra!");
+   Senão 
+   Escreva("Compra efetuada com sucesso!");
+   fimse;
+Fimalgoritmo
+============================================================
+Algoritmo "ValorImposto"
+var
+   preco, taxa, imposto : Real;
+inicio
+// Seção de Comandos
+   Escreva("Informe o valor do produto: US$ ");
+   leia(preco);
+   Escreva("Informe a taxa do imposto: % ");
+   leia(taxa);
+   taxa <- (preco*taxa)/100;
+   imposto <- (preco + taxa );
+   Escreval("O valor do imposto é de US$", taxa:5:2);
+   
+Fimalgoritmo
+============================================================
+
+Algoritmo "ValorTotalcompra"
+
+Var
+// Seção de Declarações das variáveis
+   vUnit,qnt, vTot: Real;
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva("Informe o valor do produto: R$ ");
+   Leia(vUnit);
+   Escreva("Informe a quantidade de produtos: ");
+   Leia(qnt);
+   vTot <- vUnit*qnt;
+   Escreva("O Valor total dos produtos é de R$" ,vTot:5:2);
+
+Fimalgoritmo
+============================================================
+
+
+
+
+Algoritmo "Volume lata de oleo"
+
+Var:
+    altura, raio, volume  : Real;
+
+Inicio
+      Escreva("Informe a altura da lata: cm ");
+      leia(altura);
+      Escreva ("Informe o raio da circunferência da lata: cm ");
+      Leia(raio);
+      volume <- 3.14*raio^2*altura;
+      Escreva("O volume da lata de óleo é de ",volume, " mL");
+      
+Fimalgoritmo
+
+Algoritmo "CalculoIMC"
+
+Var
+// Seção de Declarações das variáveis 
+  peso, altura, IMC: Real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreva("Informe seu pes: (kg): ")
+   leia(peso)
+   escreva("Informe sua altura (m): ")
+   leia(altura)
+   IMC <- peso/(altura ^2)
+   Escreval("IMC = ", IMC:5:2)
+   se (IMC <=17)entao
+        escreval(" abaixo do peso")
+        senao
+             se (IMC >=18.5) e (IMC <=24.9)entao
+                  escreval("peso ideal")
+
+
+
+                  senao
+                       se (IMC >= 25) e (IMC <= 29.9)entao
+                          escreval("Sobrepeso")
+                          senao
+                               se(IMC >=30) e (IMC<=34.9)entao
+                                    escreva("Obesidade Grau I")
+                                    senao
+                                         se (IMC >= 35) e (IMC <= 39.9)entao
+                                              escreva("Obesidade Grau II")
+                                              senao
+                                                   Escreva("Obsidade Morbida")
+                                         fimse
+                               fimse
+                    fimse
+             Fimse
+    Fimse
+   
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "DependentesFuncionarios)"
+
+Var
+// Seção de Declarações das variáveis 
+   nome: caractere
+   sal, novosal: Real
+   dep: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreva("Informe o nome do funcinário: ")
+   leia(nome)
+   escreva("Informe o salário atual do funcionário (R$):")
+   leia(sal)
+   escreval("Informe a quantidade de dependentes de: " , nome)
+   leia(dep)
+   Escolha dep
+             caso 0
+                  novosal <- sal+(sal * 5/100)
+             caso 1,2,3
+                  novosal <- sal+(sal*10/100)
+             caso 4,5,6
+                  novosal <- sal+(sal*15/100)
+             OutroCaso
+                      novosal <- sal+(sal*18/100)
+
+   FimEscolha
+   escreval("Salário atualizado de ", nome, " é de R$" , novosal:5:2)
+
+Fimalgoritmo
+
+
+
+
+
+
+
+Algoritmo "calculadorabasicacomse"
+var
+   numero1 : REAL
+   numero2 : REAL
+   operacao : CARACTERE
+   resultado : REAL
+inicio
+
+      ESCREVA ("Digite o primeiro número: ")
+      LEIA (numero1)
+      ESCREVA ("Digite a operação: ")
+      LEIA (operacao)
+      ESCREVA ("Digite o segundo número: ")
+      LEIA (numero2)
+
+      SE operacao = "+" ENTAO
+         resultado := numero1 + numero2
+      SENAO
+         SE operacao = "-" ENTAO
+            resultado := numero1 - numero2
+         SENAO
+            SE operacao = "*" ENTAO
+               resultado := numero1 * numero2
+            SENAO
+               SE operacao = "/" ENTAO
+                  resultado := numero1 / numero2
+               FIMSE
+            FIMSE
+         FIMSE
+      FIMSE
+
+      ESCREVA ("Resultado: ", resultado)
+
+Fimalgoritmo
+
+
+
+Algoritmo "media"
+Var
+// Seção de Declarações das variáveis
+  Nome: caractere
+  nota1,nota2, media: Real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Informe o nome do Aluno: ")
+   leia(nome)
+   escreva("Informe a primeira nota: ")
+   leia(nota1)
+   escreva("Informe segunda nota: ")
+   leia(nota2)
+   media <- (nota1 + nota2)/2
+   Escreval("Media = ", media:5:2)
+   se (media >=9 ) e (media <=10 )entao
+        escreval("A")
+        senao
+             se (media >=8)e (media <=8.9)entao
+                  escreval("B")
+                  senao
+                       se (media >=7)e (media <=7.9)entao
+                          escreval("C")
+                          senao
+                               se(media >=6)e (media <=6.9)entao
+                                    escreva("D")
+                                    senao
+                                         se (media =5)e (media <=5.9)entao
+                                              escreva("E")
+                                              senao se (media <=4.99)entao
+                                                   Escreva("F")
+                                                   fimse
+                                         fimse
+                               fimse
+                    fimse
+             Fimse
+Fimalgoritmo
+
+Algoritmo "_estrutura_repeticao_ enquanto_somadevalores"
+
+Var
+// Seção de Declarações das variáveis 
+ contador, valor, soma: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   contador <- 1
+   soma <- 0
+
+   Enquanto (contador <= 5) faca
+            escreva("Digite o" , contador, "° valor: ")
+            leia(valor)
+            soma <- soma + valor
+            contador <- contador + 1
+
+   FimEnquanto
+   escreval("a soma de todos os valores é: ", soma)
+   escreval("Programa finalizado!")
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "_Estrutura_de_repeticao_ enquanto _Conversaodolar"
+
+Var
+// Seção de Declarações das variáveis 
+   reais, dolares: Real
+   contador, quant: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   contador <- 1
+    Escreval ("Quantas vezes você quer fazer a conversão de valores? ")
+    leia(quant)
+   enquanto (contador <= quant) faca
+            Escreva("Digite quantos Reais você tem: R$")
+            Leia(reais)
+
+            dolares <- reais/5.41;
+            Escreval("Você tem US$" , dolares:4:2, " dolares.")
+            contador <- contador + 1
+   FimEnquanto
+Fimalgoritmo
+
+Algoritmo "_Estrutura_de_repeticao_Repita_contador10"
+
+Var
+// Seção de Declarações das variáveis 
+   contador: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   contador <- 1
+   repita
+         Escreva(contador)
+          contador <- contador +1
+   ate (contador > 5)
+
+Fimalgoritmo
+
+Algoritmo "_Estrutura_de_repeticao_Repita_taboada"
+
+Var
+// Seção de Declarações das variáveis 
+
+   contador, numero, resultado: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   contador <- 0
+   Escreva("Informe o número para exibição da taboada: ")
+   leia(numero)
+   repita
+         resultado <- numero * contador
+         Escreval(contador, "X", numero, "=", resultado)
+          contador <- contador +1
+   ate (contador > 10)
+Fimalgoritmo
+
+Algoritmo "_Estrutura_de_repeticao_Repita_contagem_negativos"
+Var
+// Seção de Declarações das variáveis 
+   contador, numero, num_neg: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   contador <- 1
+   num_neg <- 0
+   repita
+         Escreva("Digite o", contador, "° número: ")
+         leia(numero)
+         se (numero < 0)entao
+            num_neg <- num_neg + 1
+         fimse
+         contador <- contador +1
+   ate (contador > 5)
+   escreva("Foram digitados", num_neg, " negativos")
+Fimalgoritmo
+Algoritmo "_Estrutura_de_repeticao_Repita_Fatorial"
+
+Var
+// Seção de Declarações das variáveis
+
+   contador, numero, fatorial: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreva("Digite um número: ")
+   leia(numero)
+   contador <- numero
+   fatorial <- 1
+   repita
+         fatorial <- fatorial * contador
+         contador <- contador - 1
+   ate(contador < 1)
+   escreva("O fatorial", numero, " é: ", fatorial)
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "_Estrutura_de_repeticao_Repita_Fatorial2"
+
+Var
+// Seção de Declarações das variáveis
+
+   contador, numero, fatorial: inteiro
+   resposta: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+repita
+      Escreva("Digite um número: ")
+      leia(numero)
+      contador <- numero
+      fatorial <- 1
+      repita
+            fatorial <- fatorial * contador
+            contador <- contador - 1
+      ate(contador < 1)
+      escreval("O fatorial", numero, " é: ", fatorial)
+      escreva("Quer continuar? [S/N]: ")
+      leia(resposta)
+      limpatela
+ate(resposta = "n")
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "_Estrutura_de_repeticao_Repita_NumeroPrimo"
+
+Var
+// Seção de Declarações das variáveis
+
+   contador, numero, contDiv: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   contador <- 1
+   contDiv <- 0
+   escreva("Digite um número: ")
+   leia(numero)
+   repita
+          se (numero % contador = 0)entao
+          contDiv <- contDiv + 1
+         fimse
+         contador <- contador +1
+   ate(contador > numero)
+   se (contDiv > 2 ) entao
+      escreval("O número", numero, " não é primo!")
+   senao
+        escreval("O número", numero, " é primo!")
+   fimse
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "Estrutura_Para_contarate10"
+
+Var
+   contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+   para contador <- 1 ate 10 faca
+          escreva(contador)
+   fimpara
+Fimalgoritmo
+
+
+//Contando de trás para frente
+Algoritmo "Estrutura_Para_contarate10"
+
+Var
+   contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+   para contador <- 10 ate 1 passo -1 faca
+          escreva(contador)
+   fimpara
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+Algoritmo "Estrutura_Para_numerosPares"
+
+Var
+   numero, contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Digite um número: ")
+   leia(numero)
+   para contador <-0 ate numero passo 2 faca
+          escreva(contador)
+   fimpara
+
+Fimalgoritmo
+
+
+Algoritmo "Estrutura_Para_contagem_regressiva_numerosPares"
+
+Var
+   numero, contador: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Digite um número: ")
+   leia(numero)
+   se (numero % 2 = 1) entao
+        numero <- numero -1
+   fimse
+   para contador <- numero ate 0 passo -2 faca
+          escreval(contador)
+   fimpara
+
+Fimalgoritmo
+
+
+
+
+Algoritmo "Estrutura_Para_quantosvalores_entre_0_10"
+
+Var
+   numero, contador, totvalor: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   totvalor <-0
+   para contador <- 1 ate 6 faca
+   escreva("Digite um número: ")
+   leia(numero)
+   se (numero >=0) e (numero <=10) entao
+      totvalor <- totvalor + 1
+   fimse
+   fimpara
+   escreval("Ao todo foram digitados", totvalor, " valores entre 0 e 10: ")
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "Estrutura_Para_soma_dos_numeros_impares_entre_0_10"
+
+Var
+   numero, contador, totvalor, somaimpar: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   totvalor <-0
+   somaimpar <- 0
+   para contador <- 1 ate 6 faca
+     escreva("Digite um número: ")
+     leia(numero)
+     se (numero >=0) e (numero <=10) entao
+      totvalor <- totvalor + 1
+      se(numero % 2 = 1) entao
+                somaimpar <- somaimpar + numero
+       fimse
+      fimse
+   fimpara
+   escreval("Ao todo foram digitados", totvalor, " valores entre 0 e 10: ")
+   escreval("A soma dos números impares digitados entre 0 e 10 é: ", somaimpar)
+Fimalgoritmo
+
+Algoritmo "aninhamento_estrutura_repeticao_para_combinacoes"
+Var
+// Seção de Declarações das variáveis 
+  c1, c2: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   para c1 :=  1 ate 3 faca
+        para C2 :=1 ate 3 faca
+             escreval(c1, c2)
+        fimpara
+   fimpara
+Fimalgoritmo
+Algoritmo "Procedimentos_Rotina_Maiorpeso"
+
+Var
+// Seção de Declarações das variáveis 
+ nome, pesado :caractere
+ peso, maior: real
+ I:inteiro
+ 
+ procedimento topo() 
+ inicio
+   limpatela   escreval("====================================================")
+   escreval("               DETECTOR DE MAIOR PESO             ")
+   escreval("        Maior peso informado até agora: ", maior, " kg")
+   escreval("====================================================")
+ fimprocedimento
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   topo()
+   para I <- 1 ate 5 faca
+        escreva("Digite um nome: ")
+        leia(nome)
+        escreva("Digite o peso de " , nome, " :")
+        leia(peso)
+        se(peso > maior) entao
+           maior <- peso
+           pesado <- nome
+        fimse
+        topo()
+   fimpara
+   topo()
+   escreval("A pessoa mais pesada foi ", pesado, " com", maior, " Kg")           
+
+Fimalgoritmo
